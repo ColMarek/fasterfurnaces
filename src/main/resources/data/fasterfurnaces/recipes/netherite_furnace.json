@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yyy",
+    "#x#",
+    "yyy"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "y": {
+      "item": "minecraft:cobblestone"
+    },
+    "x": {
+      "item": "fasterfurnaces:diamond_furnace"
+    }
+  },
+  "result": {
+    "item": "fasterfurnaces:netherite_furnace",
+    "count": 1
+  }
+}

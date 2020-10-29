@@ -4,6 +4,7 @@ import com.colmarek.fasterfurnaces.FasterFurnacesMod;
 import com.colmarek.fasterfurnaces.gui.DiamondFurnaceScreen;
 import com.colmarek.fasterfurnaces.gui.GoldFurnaceScreen;
 import com.colmarek.fasterfurnaces.gui.IronFurnaceScreen;
+import com.colmarek.fasterfurnaces.gui.NetheriteFurnaceScreen;
 import net.minecraft.client.gui.ScreenManager;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,5 +18,6 @@ public class ClientEventBusSubscriber {
         ScreenManager.registerFactory(Registration.IRON_FURNACE_CONTAINER.get(), IronFurnaceScreen::new);
         ScreenManager.registerFactory(Registration.GOLD_FURNACE_CONTAINER.get(), GoldFurnaceScreen::new);
         ScreenManager.registerFactory(Registration.DIAMOND_FURNACE_CONTAINER.get(), DiamondFurnaceScreen::new);
+        ScreenManager.registerFactory(Registration.NETHERITE_FURNACE_CONTAINER.get(), NetheriteFurnaceScreen::new);
     }
 }

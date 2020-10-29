@@ -5,5 +5,7 @@
   "block.fasterfurnaces.gold_furnace": "Gold Furnace",
   "container.fasterfurnaces.gold_furnace": "Gold Furnace",
   "block.fasterfurnaces.diamond_furnace": "Diamond Furnace",
-  "container.fasterfurnaces.diamond_furnace": "Diamond Furnace"
+  "container.fasterfurnaces.diamond_furnace": "Diamond Furnace",
+  "block.fasterfurnaces.netherite_furnace": "Netherite Furnace",
+  "container.fasterfurnaces.netherite_furnace": "Netherite Furnace"
 }

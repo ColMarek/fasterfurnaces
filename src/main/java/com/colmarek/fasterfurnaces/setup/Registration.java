@@ -10,6 +10,9 @@ import com.colmarek.fasterfurnaces.blocks.goldfurnace.GoldFurnaceTile;
 import com.colmarek.fasterfurnaces.blocks.ironfurnace.IronFurnace;
 import com.colmarek.fasterfurnaces.blocks.ironfurnace.IronFurnaceContainer;
 import com.colmarek.fasterfurnaces.blocks.ironfurnace.IronFurnaceTile;
+import com.colmarek.fasterfurnaces.blocks.netheritefurnace.NetheriteFurnace;
+import com.colmarek.fasterfurnaces.blocks.netheritefurnace.NetheriteFurnaceContainer;
+import com.colmarek.fasterfurnaces.blocks.netheritefurnace.NetheriteFurnaceTile;
 import net.minecraft.block.Block;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
@@ -52,4 +55,9 @@ public class Registration {
     public static final RegistryObject<Item> DIAMOND_FURNACE_ITEM = ITEMS.register("diamond_furnace", () -> new BlockItem(DIAMOND_FURNACE.get(), properties));
     public static final RegistryObject<ContainerType<DiamondFurnaceContainer>> DIAMOND_FURNACE_CONTAINER = CONTAINERS.register("diamond_furnace", () -> IForgeContainerType.create((windowId, inv, data) -> new DiamondFurnaceContainer(windowId, inv)));
     public static final RegistryObject<TileEntityType<DiamondFurnaceTile>> DIAMOND_FURNACE_TILE = TILES.register("diamond_furnace", () -> TileEntityType.Builder.create(DiamondFurnaceTile::new, DIAMOND_FURNACE.get()).build(null));
+
+    public static final RegistryObject<NetheriteFurnace> NETHERITE_FURNACE = BLOCKS.register("netherite_furnace", NetheriteFurnace::new);
+    public static final RegistryObject<Item> NETHERITE_FURNACE_ITEM = ITEMS.register("netherite_furnace", () -> new BlockItem(NETHERITE_FURNACE.get(), properties));
+    public static final RegistryObject<ContainerType<NetheriteFurnaceContainer>> NETHERITE_FURNACE_CONTAINER = CONTAINERS.register("netherite_furnace", () -> IForgeContainerType.create((windowId, inv, data) -> new NetheriteFurnaceContainer(windowId, inv)));
+    public static final RegistryObject<TileEntityType<NetheriteFurnaceTile>> NETHERITE_FURNACE_TILE = TILES.register("netherite_furnace", () -> TileEntityType.Builder.create(NetheriteFurnaceTile::new, NETHERITE_FURNACE.get()).build(null));
 }

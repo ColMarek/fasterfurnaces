@@ -1,0 +1,8 @@
+{
+    "parent": "block/orientable",
+    "textures": {
+        "top": "fasterfurnaces:block/netherite_furnace_top",
+        "front": "fasterfurnaces:block/netherite_furnace_front",
+        "side": "fasterfurnaces:block/netherite_furnace_side"
+    }
+}
