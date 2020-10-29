@@ -3,27 +3,23 @@ package com.colmarek.fasterfurnaces.blocks;
 import net.minecraft.block.AbstractFurnaceBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.particles.ParticleTypes;
-import net.minecraft.stats.Stats;
-import net.minecraft.tileentity.TileEntity;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.util.Direction;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.SoundEvents;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockReader;
 import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.fml.network.NetworkHooks;
 
 import java.util.Random;
+import java.util.function.ToIntFunction;
 
 public abstract class ModFurnace extends AbstractFurnaceBlock {
 
     public ModFurnace() {
-        super(Properties.create(Material.ROCK).hardnessAndResistance(3.5F).lightValue(13));
+        super(Properties.create(Material.ROCK).hardnessAndResistance(3.5F).func_235838_a_(func_235420_a_(13)));
     }
 
     @Override
@@ -47,6 +43,13 @@ public abstract class ModFurnace extends AbstractFurnaceBlock {
             worldIn.addParticle(ParticleTypes.SMOKE, d0 + d5, d1 + d6, d2 + d7, 0.0D, 0.0D, 0.0D);
             worldIn.addParticle(ParticleTypes.FLAME, d0 + d5, d1 + d6, d2 + d7, 0.0D, 0.0D, 0.0D);
         }
+    }
+
+    // Copied from net/minecraft/block/Blocks.java
+    private static ToIntFunction<BlockState> func_235420_a_(int p_235420_0_) {
+        return (p_235421_1_) -> {
+            return p_235421_1_.get(BlockStateProperties.LIT) ? p_235420_0_ : 0;
+        };
     }
 
 }
