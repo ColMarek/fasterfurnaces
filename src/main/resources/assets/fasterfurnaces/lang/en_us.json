@@ -1,5 +1,9 @@
 {
   "itemGroup.fasterfurnaces": "Faster Furnaces",
+  "block.fasterfurnaces.iron_furnace": "Iron Furnace",
+  "container.fasterfurnaces.iron_furnace": "Iron Furnace",
+  "block.fasterfurnaces.gold_furnace": "Gold Furnace",
+  "container.fasterfurnaces.gold_furnace": "Gold Furnace",
   "block.fasterfurnaces.diamond_furnace": "Diamond Furnace",
   "container.fasterfurnaces.diamond_furnace": "Diamond Furnace"
 }

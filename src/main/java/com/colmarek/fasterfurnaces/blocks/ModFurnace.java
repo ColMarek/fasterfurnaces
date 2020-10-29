@@ -20,24 +20,10 @@ import net.minecraftforge.fml.network.NetworkHooks;
 
 import java.util.Random;
 
-public class DiamondFurnace extends AbstractFurnaceBlock {
+public abstract class ModFurnace extends AbstractFurnaceBlock {
 
-    public DiamondFurnace() {
+    public ModFurnace() {
         super(Properties.create(Material.ROCK).hardnessAndResistance(3.5F).lightValue(13));
-    }
-
-    @Override
-    public TileEntity createNewTileEntity(IBlockReader worldIn) {
-        return new DiamondFurnaceTile();
-    }
-
-    @Override
-    protected void interactWith(World worldIn, BlockPos pos, PlayerEntity player) {
-        TileEntity tileEntity = worldIn.getTileEntity(pos);
-        if (tileEntity instanceof DiamondFurnaceTile) {
-            NetworkHooks.openGui((ServerPlayerEntity) player, (DiamondFurnaceTile) tileEntity, pos);
-            player.addStat(Stats.INTERACT_WITH_FURNACE); // From Minecraft srouce
-        }
     }
 
     @Override

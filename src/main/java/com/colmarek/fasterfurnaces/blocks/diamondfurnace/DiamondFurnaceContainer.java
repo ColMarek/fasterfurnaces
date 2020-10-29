@@ -1,4 +1,4 @@
-package com.colmarek.fasterfurnaces.blocks;
+package com.colmarek.fasterfurnaces.blocks.diamondfurnace;
 
 import com.colmarek.fasterfurnaces.setup.Registration;
 import net.minecraft.entity.player.PlayerInventory;
