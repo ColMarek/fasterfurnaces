@@ -1,6 +1,7 @@
 modLoader = "javafml"
-loaderVersion = "[31,)"
+loaderVersion = "[34,)"
 issueTrackerURL = "https://github.com/ColMarek/fasterfurnaces/issues"
+license="MIT License"
 
 [[mods]]
 modId = "fasterfurnaces"
@@ -17,13 +18,13 @@ This mod adds new furnaces that are faster than the vanilla one.
 [[dependencies.fasterfurnaces]]
 modId = "forge"
 mandatory = true
-versionRange = "[31,)"
+versionRange = "[34,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.fasterfurnaces]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.15.2]"
+versionRange = "[1.16.3]"
 ordering = "NONE"
 side = "BOTH"
