@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[31,)"
+issueTrackerURL = "https://github.com/ColMarek/fasterfurnaces/issues"
+
+[[mods]]
+modId = "fasterfurnaces"
+version = "${file.jarVersion}"
+displayName = "Faster Furnaces"
+updateJSONURL = "http://colmarek.github.com/"
+displayURL = "http://colmarek.github.com/"
+logoFile = "icon.png"
+authors = "ColMarek"
+description = '''
+This mod adds new furnaces that are faster than the vanilla one.
+'''
+
+[[dependencies.fasterfurnaces]]
+modId = "forge"
+mandatory = true
+versionRange = "[31,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.fasterfurnaces]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.15.2]"
+ordering = "NONE"
+side = "BOTH"
