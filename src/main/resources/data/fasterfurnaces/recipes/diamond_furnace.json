@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "yyy",
+    "#x#",
+    "yyy"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:diamond"
+    },
+    "y": {
+      "item": "minecraft:cobblestone"
+    },
+    "x": {
+      "item": "fasterfurnaces:gold_furnace"
+    }
+  },
+  "result": {
+    "item": "fasterfurnaces:diamond_furnace",
+    "count": 1
+  }
+}

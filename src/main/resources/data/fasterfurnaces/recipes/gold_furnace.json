@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#x#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_ingot"
+    },
+    "x": {
+      "item": "fasterfurnaces:iron_furnace"
+    }
+  },
+  "result": {
+    "item": "fasterfurnaces:gold_furnace",
+    "count": 1
+  }
+}
