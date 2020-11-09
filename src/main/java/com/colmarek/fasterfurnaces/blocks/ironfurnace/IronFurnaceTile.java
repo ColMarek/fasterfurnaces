@@ -1,6 +1,7 @@
 package com.colmarek.fasterfurnaces.blocks.ironfurnace;
 
 import com.colmarek.fasterfurnaces.FasterFurnacesMod;
+import com.colmarek.fasterfurnaces.setup.Config;
 import com.colmarek.fasterfurnaces.setup.Registration;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
@@ -22,7 +23,7 @@ public class IronFurnaceTile extends AbstractFurnaceTileEntity {
 
     @Override
     protected int getCookTime() {
-        return super.getCookTime() / 2;
+        return Math.max(1, super.getCookTime() / Config.IRON_FURNACE_MULTIPLIER);
     }
 
     @Override
